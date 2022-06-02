@@ -1,0 +1,25 @@
+{
+  "name": "apollo-gateway-poc",
+  "version": "1.0.0",
+  "description": "Apollo GraphQL Gateway in Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/site-tech/apollo-gateway-poc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/site-tech/apollo-gateway-poc/issues"
+  },
+  "homepage": "https://github.com/site-tech/apollo-gateway-poc#readme",
+  "dependencies": {
+    "@apollo/gateway": "^2.0.4",
+    "apollo-server": "^3.8.1",
+    "dotenv": "^16.0.1",
+    "graphql": "^16.5.0"
+  }
+}
