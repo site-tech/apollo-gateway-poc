@@ -1,8 +1,8 @@
 const { ApolloServer } = require('apollo-server');
 const { ApolloGateway, IntrospectAndCompose } = require('@apollo/gateway');
 const dotenv = require('dotenv');
-
 dotenv.config();
+const PORT = process.env.PORT || 4000
 
 // Initialize an ApolloGateway instance and pass it
 // the supergraph schema as a string
@@ -22,6 +22,6 @@ const server = new ApolloServer({
   subscriptions: false
 });
 
-server.listen().then(({ url }) => {
+server.listen(PORT).then(({ url }) => {
   console.log(`🚀 Gateway ready at ${url}`);
 }).catch(err => {console.error(err)});
