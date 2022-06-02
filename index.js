@@ -11,10 +11,9 @@ const gateway = new ApolloGateway({
 		subgraphs: [
 			{ name: 'accounts', url: process.env.SUBGRAPH_ACCOUNTS},
 			{ name: 'products', url: process.env.SUBGRAPH_PRODUCTS},
+			{ name: 'reviews', url: process.env.SUBGRAPH_REVIEWS},
 		]
 	}),
-	uplinkMaxRetries: 3,
-	fallbackPollIntervalInMs: 300000, // 5 minutes
 });
 
 const server = new ApolloServer({
